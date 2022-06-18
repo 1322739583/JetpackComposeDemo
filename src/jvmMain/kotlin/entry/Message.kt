@@ -1,0 +1,5 @@
+package entry
+
+class Message{
+
+}

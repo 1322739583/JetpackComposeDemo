@@ -18,7 +18,10 @@ fun EditText() {
 //
 //    }
     OutlinedTextField(
-        value = text, enabled = true, onValueChange = { text = it }, colors = TextFieldDefaults.textFieldColors(
+        value = text,
+        enabled = true,
+        onValueChange = { text = it },
+        colors = TextFieldDefaults.textFieldColors(
             backgroundColor = Color(0xFFFFFFF),
             textColor = Color.Gray,//主文本颜色
             disabledTextColor = Color.Green,//enabled属性为false的时候主文本的颜色
@@ -30,10 +33,10 @@ fun EditText() {
         ), label = {
             Text("name")
         }, placeholder = {
-            Text(text="enter name here")
+            Text(text = "enter name here")
         },
-        leadingIcon ={
-            Icon(imageVector = Icons.Default.AccountBox,contentDescription = null)
+        leadingIcon = {
+            Icon(imageVector = Icons.Default.AccountBox, contentDescription = null)
         },
         singleLine = true
     )
