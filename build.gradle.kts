@@ -30,6 +30,7 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
+                implementation("com.formdev:flatlaf:2.3")
             }
         }
         val jvmTest by getting
